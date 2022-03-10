@@ -14,9 +14,11 @@ function login(){
     
     let captchaResponse = grecaptcha.getResponse()
     if(captchaResponse.length != 0)
-        windowRedirection();
+        windowRedirection("./success.html");
+    else
+        windowRedirection("./index.html");
 }
 
-function windowRedirection(){
-    window.location.assign("./success.html")
+function windowRedirection(page){
+    window.location.assign(page)
 }
