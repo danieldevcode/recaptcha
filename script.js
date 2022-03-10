@@ -12,11 +12,11 @@ function login(){
     userInput.username = document.querySelector("#username").value
     userInput.password = document.querySelector("#password").value
     
-    console.log(userInput)
-
-    windownRedirection();
+    let captchaResponse = grecaptcha.getResponse()
+    if(captchaResponse.length != 0)
+        windowRedirection();
 }
 
-function windownRedirection(){
+function windowRedirection(){
     window.location.assign("./success.html")
 }
