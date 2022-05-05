@@ -1,3 +1,3 @@
 # recaptcha
 User: Grogu
-Password: Mando66
+Password: mando66
