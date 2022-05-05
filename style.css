@@ -8,8 +8,8 @@ html {
 .login {
     display: block;
     position: absolute;
-    top: 40%;
-    left: 48%;
+    top: 50vh;
+    left: 48vw;
     transform: translate(-40%, -50%);
     
     background-color: rgba(248, 249, 250, 1);
